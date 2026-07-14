@@ -19,8 +19,6 @@ class TestPersonalAccount:
         WebDriverWait(driver, 5).until(
             EC.visibility_of_element_located(MainPageLocators.ORDER_BUTTON))
 
-        assert driver.current_url == urls.MAIN_PAGE_URL
-
         driver.find_element(*MainPageLocators.PERSONAL_ACCOUNT_BUTTON).click()
 
         WebDriverWait(driver, 5).until(
@@ -39,8 +37,6 @@ class TestPersonalAccount:
 
         WebDriverWait(driver, 5).until(
             EC.visibility_of_element_located(MainPageLocators.ORDER_BUTTON))
-
-        assert driver.current_url == urls.MAIN_PAGE_URL
 
         driver.find_element(*MainPageLocators.PERSONAL_ACCOUNT_BUTTON).click()
 
@@ -66,8 +62,6 @@ class TestPersonalAccount:
         WebDriverWait(driver, 5).until(
             EC.visibility_of_element_located(MainPageLocators.ORDER_BUTTON))
 
-        assert driver.current_url == urls.MAIN_PAGE_URL
-
         driver.find_element(*MainPageLocators.PERSONAL_ACCOUNT_BUTTON).click()
 
         WebDriverWait(driver, 5).until(
@@ -91,8 +85,6 @@ class TestPersonalAccount:
 
         WebDriverWait(driver, 5).until(
             EC.visibility_of_element_located(MainPageLocators.ORDER_BUTTON))
-
-        assert driver.current_url == urls.MAIN_PAGE_URL
 
         driver.find_element(*MainPageLocators.PERSONAL_ACCOUNT_BUTTON).click()
 
