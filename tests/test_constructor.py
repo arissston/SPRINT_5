@@ -13,7 +13,7 @@ class TestConstructor:
         driver.get(urls.MAIN_PAGE_URL)
         driver.find_element(*ConstructorPageLocators.SAUCES_TAB).click()
 
-        assert WebDriverWait(driver, 5).until(
+        WebDriverWait(driver, 5).until(
             EC.visibility_of_element_located(ConstructorPageLocators.SAUCES_ACTIVE_TAB))
 
         driver.find_element(*ConstructorPageLocators.BUNS_TAB).click()
